@@ -1,9 +1,5 @@
 --aliases
-<<<<<<< HEAD
 minetest.get_modpath("cannabis")
-=======
-
->>>>>>> 4a6bf80e25ecbff7606bd84468868fa2fad40c21
 minetest.register_alias("canapa","cannabis:canapa")
 
 --register node
@@ -14,12 +10,8 @@ minetest.register_node("cannabis:hp_block_canapa",
 	description = "hp_block_canapa",
 	tiles = {"hp_block_canapa.png"},
 	is_ground_content = false,
-	groups = {choppy = 20, oddly_breakable_by_hand = 1, flammable = 3, wood = 1},
-<<<<<<< HEAD
-	sounds = "cannabis_canapa_s2",
-=======
-	sounds = "cannabis_canapa_s",
->>>>>>> 4a6bf80e25ecbff7606bd84468868fa2fad40c21
+	groups = {choppy = 30, oddly_breakable_by_hand = 1, flammable = 3, wood = 1},
+	sounds = "cannabis:cannabis_canapa_s2",
 })
 
 minetest.register_node("cannabis:canapa", {
@@ -37,7 +29,6 @@ minetest.register_node("cannabis:canapa", {
 	},
 	groups = {snappy = 3, flammable = 2},
 	sounds = "cannabis_canapa_s",
-<<<<<<< HEAD
         drop = {
    max_items = 2,
    items = {
@@ -45,9 +36,6 @@ minetest.register_node("cannabis:canapa", {
       {items = {"cannabis:canapa_leaves"}, rarity = 1 },
    }
 },
-=======
-        drop = "cannabis:canapa_leaves",
->>>>>>> 4a6bf80e25ecbff7606bd84468868fa2fad40c21
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
 	end,
@@ -294,11 +282,7 @@ minetest.register_craft({
 		y_max = 1,
 		decoration = "cannabis:canapa",
 		height = 2,
-<<<<<<< HEAD
 		height_max = 7, 
-=======
-		height_max = 7,
->>>>>>> 4a6bf80e25ecbff7606bd84468868fa2fad40c21
 		spawn_by = "default:water_source",
 		num_spawn_by = 1,
 	})
@@ -320,7 +304,6 @@ minetest.register_craft({
 		y_min = 0,
 		y_max = 0,
 		schematic = minetest.get_modpath("default").."/schematics/papyrus.mts",
-<<<<<<< HEAD
 	})
         --armor
         
@@ -636,6 +619,3 @@ minetest.register_craft({
 	output = "cannabis:mixed_hr_ingot 3",
 	recipe = {"cannabis:fibra_ingot", "cannabis:foglie_ingot", "cannabis:tessuto_ingot"}
 })
-=======
-	})
->>>>>>> 4a6bf80e25ecbff7606bd84468868fa2fad40c21
